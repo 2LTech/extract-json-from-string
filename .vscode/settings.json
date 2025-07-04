@@ -1,0 +1,6 @@
+{
+  "sonarlint.connectedMode.project": {
+    "connectionId": "2ltech",
+    "projectKey": "2LTech_extract-json-from-string"
+  }
+}

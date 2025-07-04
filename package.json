@@ -1,0 +1,42 @@
+{
+  "name": "@2ltech/extract-json-from-string",
+  "description": "Extract JSON/javascript objects from strings",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "type": "module",
+  "scripts": {
+    "depcheck": "depcheck . --ignores=@swc/jest,@types/jest",
+    "prettier": "prettier -l '**/*.{js,ts,json,md}'",
+    "test": "jest --coverage --silent",
+    "build": "swc lib -o dist/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/2LTech/extract-json-from-string"
+  },
+  "keywords": [
+    "JSON",
+    "extract",
+    "objects",
+    "array"
+  ],
+  "author": {
+    "name": "2LTech",
+    "url": "https://github.com/orgs/2LTech/people"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/2LTech/extract-json-from-string/issues"
+  },
+  "homepage": "https://github.com/2LTech/extract-json-from-string",
+  "devDependencies": {
+    "@swc/cli": "0.7.7",
+    "@swc/core": "1.12.9",
+    "@swc/jest": "0.2.38",
+    "@types/jest": "30.0.0",
+    "depcheck": "1.4.7",
+    "jest": "30.0.4",
+    "prettier": "3.6.2"
+  },
+  "packageManager": "yarn@4.9.2"
+}
