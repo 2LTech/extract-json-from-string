@@ -1,6 +1,6 @@
 [![Quality gate](https://sonarcloud.io/api/project_badges/quality_gate?project=2LTech_extract-json-from-string)](https://sonarcloud.io/summary/new_code?id=2LTech_extract-json-from-string)
 
-** Forked from [tandrewnichols/extract-json-from-string](https://github.com/tandrewnichols/extract-json-from-string) **
+**Forked from [tandrewnichols/extract-json-from-string](https://github.com/tandrewnichols/extract-json-from-string)**
 
 # extract-json-from-string
 
