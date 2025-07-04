@@ -15,7 +15,8 @@ const jsonify = (stringWithJSON: string): JSON => {
   } catch (err) {
     console.info('JSON parse failed: cleanup', err)
     stringWithJSON = stringWithJSON
-      .replace(/([a-zA-Z0-9_$]+\s*):/g, '"$1":')
+      // .replace(/([a-zA-Z0-9_$]+\s*):/g, '"$1":')
+      .replace(/([a-zA-Z0-9_$]+)\s*:/g, '"$1":')
       .replace(/'([^']+?)'([\s,\]}])/g, '"$1"$2')
     return JSON.parse(stringWithJSON)
   }

@@ -10,7 +10,7 @@ describe('extract-json-from-string', () => {
 
   test('multiple JSON', () => {
     const results = extractJSONFromString(
-      "Here's an object { foo: 'bar' } that should be extracted as well as { baz: 'quux' } this"
+      `Here's an object { foo: "bar" } that should be extracted as well as { baz: 'quux' } this`
     )
     expect(results).toEqual([{ foo: 'bar' }, { baz: 'quux' }])
   })
