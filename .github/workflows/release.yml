@@ -14,13 +14,13 @@ jobs:
 
     steps:
       - uses: actions/checkout@main
+      - name: Corepack
+        run: corepack enable
       - uses: actions/setup-node@master
         with:
           node-version: '22.x'
       - name: Install
         run: yarn install
-      - name: Corepack
-        run: corepack enable
       - name: Build
         run: yarn build
       - uses: actions/setup-node@master
