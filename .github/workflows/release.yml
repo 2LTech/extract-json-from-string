@@ -43,7 +43,4 @@ jobs:
           registry-url: 'https://registry.npmjs.org'
           scope: '@2ltech'
       - name: Publish NPM
-        run: yarn npm publish --access=public
-        env:
-          NODE_AUTH_TOKEN:
-          YARN_NPM_AUTH_TOKEN:
+        run: npm publish --provenance --access public
