@@ -45,4 +45,5 @@ jobs:
       - name: Publish NPM
         run: yarn npm publish --access=public
         env:
+          NODE_AUTH_TOKEN:
           YARN_NPM_AUTH_TOKEN:
