@@ -1,4 +1,7 @@
 .github
+.swc
+.vscode
+.yarn
 coverage
 lib
 node_modules
