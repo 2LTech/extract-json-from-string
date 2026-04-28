@@ -4,6 +4,10 @@ on:
     branches:
       - main
 
+permissions:
+  id-token: write
+  contents: read
+
 jobs:
   build:
     name: Release
@@ -40,5 +44,3 @@ jobs:
           scope: '@2ltech'
       - name: Publish NPM
         run: yarn npm publish --access=public
-        env:
-          YARN_NPM_AUTH_TOKEN: ${{ secrets.NODE_AUTH_TOKEN }}
