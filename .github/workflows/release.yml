@@ -44,3 +44,5 @@ jobs:
           scope: '@2ltech'
       - name: Publish NPM
         run: yarn npm publish --access=public
+        env:
+          YARN_NPM_AUTH_TOKEN:
