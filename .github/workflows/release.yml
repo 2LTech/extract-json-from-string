@@ -41,6 +41,8 @@ jobs:
           registry-url: 'https://registry.npmjs.org'
           scope: '@2ltech'
       - name: Update npm to latest version for OIDC support
-        run: npm install -g npm@11.12.1
+        run: |
+          npm install -g npm@11.10.0
+          npm install -g npm@latest
       - name: Publish NPM
         run: npm publish --provenance --access public
