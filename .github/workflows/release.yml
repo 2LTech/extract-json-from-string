@@ -40,11 +40,7 @@ jobs:
         with:
           registry-url: 'https://registry.npmjs.org'
           scope: '@2ltech'
-      - name: Update NPM
-        run: |
-          npm config set package-lock true
-          echo 'package-lock=true'>> .npmrc
-          npm install -g npm@latest
-          npm i -g npm-upgrade
+      - name: Update npm to latest version for OIDC support
+        run: npm install -g npm@11.12.1
       - name: Publish NPM
         run: npm publish --provenance --access public
