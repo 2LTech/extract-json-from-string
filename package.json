@@ -5,7 +5,7 @@
   "main": "dist/index.js",
   "type": "module",
   "scripts": {
-    "depcheck": "depcheck . --ignores=@swc/jest,@types/jest",
+    "depcheck": "knip --dependencies",
     "prettier": "prettier -l '**/*.{js,ts,json,md}'",
     "test": "jest --coverage --silent",
     "build": "swc lib -o dist/index.js",
@@ -35,8 +35,8 @@
     "@swc/core": "1.15.46",
     "@swc/jest": "0.2.39",
     "@types/jest": "30.0.0",
-    "depcheck": "1.4.7",
     "jest": "30.4.2",
+    "knip": "6.27.0",
     "prettier": "3.9.5"
   },
   "packageManager": "yarn@4.17.1"
